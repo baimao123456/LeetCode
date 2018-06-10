@@ -7,7 +7,7 @@
 
 using namespace std;
 //比较函数，升序排序--按返回为1进行排序，
-bool cmp(pair<int, int> a,pair<int, int> b)
+bool cmp(pair<int, int>& a,pair<int, int>& b)
 {
     return a.first < b.first;  //返回为1，就是升序排序
 }
