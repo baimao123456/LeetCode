@@ -47,7 +47,7 @@ public:
             vector<int> item;             //存放回溯过程中产生的子集
             for(int j = 0; j < nums.size(); j++)
             {
-                if((1 << nums.size() - 1 - j) & i)
+                if((1 << j) & i)
                     item.push_back(nums[j]);
             }
             result.push_back(item);
